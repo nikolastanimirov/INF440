@@ -1,0 +1,27 @@
+<html>
+    <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    </head>
+    <body>
+    <div class="container">
+        <h2><%= title %></h2>
+        <form action="/update" method="post">
+         <input type="hidden"  value="<%= user.id %>" name="id">
+            <div class="from-group">
+                <label>First Name:</label>
+                <input type="text" id="FirstName" required placeholder="Enter your First Name" name="FirstName" value="<%= user.FirstName %>">
+            </div>
+            <div class="from-group">
+                <label>Last Name:</label>
+                <input type="text" id="LastName" required placeholder="Enter your Last Name" name="LastName" value="<%= user.LastName %>">
+            </div>
+            <div class="from-group">
+                <label>Email:</label>
+                <input type="text" id="Email"  required placeholder="Enter your Email" name="Email" value="<%= user.Email %>">
+            </div>
+            <button class="btn btn-primary" placeholder="Submit">Submit</button>
+        </form>
+    </div>
+    </body>
+</html>

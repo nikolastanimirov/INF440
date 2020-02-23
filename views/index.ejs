@@ -1,0 +1,36 @@
+<html>
+    <head>
+    <title>CRUD Application</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    </head>
+    <body>
+    <div class="container">
+    <h2><%= title %></h2>
+    <a href="/add"><button type="button" class="btn btn-success">Add User</button></a>
+    <table> 
+        <thead>
+        <tr>
+        <th>Name</th>
+        <th>Surname</th>
+        <th>Email</th>
+        </tr>
+        </thead>
+        <tbody>
+        <% user.forEach(function(user){ %>
+            <tr>
+            <td><%= user.FirstName %></td>
+            <td><%= user.LastName %></td>
+            <td><%= user.Email %></td>
+            <td>
+             <a href="edit/<%= user.id%>"><button type="button" class="btn btn-warning">Edit</button></a>
+             <a href="delete/<%= user.id%>"><button type="button" class="btn btn-danger">Delete</button>
+            </td>
+            </tr>
+
+      <%  }); %>
+        
+        </tbody>
+    </table>
+    </div>
+    </body>
+</html>
