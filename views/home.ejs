@@ -1,9 +1,44 @@
 <html>
     <head>
-    <title>Home</title>
+    <title>CRUD Application</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+       <link rel="stylesheet" type="text/css" href="../static/login.css">
     </head>
     <body>
-    <h1>Home</h1>
+    <header>
+    <ul class="nav justify-content-end">
+        <li class="nav-item">
+            <a href="/login">Login</a>
+            </li>
+        <li class="nav-item">
+          <a href="/register">Register</a>
+        </li>
+      </ul>
+      </header>
+    <div class="container">
+    <h2><%= title %></h2>
+    </br>
+    <table> 
+        <thead>
+        <tr>
+        <th>Subject</th>
+        <th>Description</th>
+        <th>Severity</th>
+        </tr>
+        </thead>
+        <tbody>
+        <% user.forEach(function(user){ %>
+            <tr>
+            <td><%= user.Subject %></td>
+            <td><%= user.Description %></td>
+            <td><%= user.Severity %></td>
+
+            </tr>
+
+      <%  }); %>
+        
+        </tbody>
+    </table>
+    </div>
     </body>
 </html>

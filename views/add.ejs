@@ -2,25 +2,29 @@
     <head>
     <title>CRUD Application</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../static/login.css">
     </head>
     <body>
     <div class="container">
         <h2><%= title %></h2>
+        <hr>
         <form action="/save" method="post">
             <div class="from-group">
-                <label>First Name:</label>
-                <input type="text" id="FirstName" required placeholder="Enter your First Name" name="FirstName">
+
+                <label for="formGroupExampleInput">Subject:</label>
+                <input type="text" id="FirstName"  placeholder="Enter a Subject" name="Subject" required>
             </div>
             <div class="from-group">
-                <label>Last Name:</label>
-                <input type="text" id="LastName" required placeholder="Enter your Last Name" name="LastName">
+                <label for="formGroupExampleInput">Description:</label>
+                <input type="text" id="LastName"  placeholder="Enter a Description" name="Description">
             </div>
             <div class="from-group">
-                <label>Email:</label>
-                <input type="text" id="Email"  required placeholder="Enter your Email" name="Email">
-            </div>
-            <button class="btn btn-primary" placeholder="Submit">Submit</button>
+                <label>Severity:</label>
+                <input type="number" id="Email"   placeholder="Enter a Severity" name="Severity" required>
+            </div>          
+            <button class="btn btn-warning" placeholder="Submit">Submit</button>
         </form>
+    
     </div>
     </body>
 </html>

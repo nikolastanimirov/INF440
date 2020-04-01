@@ -1,0 +1,44 @@
+body {
+  background-color: rgb(73, 73, 148);
+  color: #fff !important;
+}
+.container {
+  margin: 15vh auto;
+  width: 80vh;
+  text-align: center;
+  font-size: 30px !important;
+}
+.form {
+  text-align: left;
+}
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(255, 255, 255, 0.9),
+    rgba(0, 0, 0, 0)
+  );
+}
+button {
+  margin-top: 25px !important;
+}
+.register {
+  color: #fff;
+}
+header {
+  padding-right: 55px;
+
+  text-decoration: underline;
+}
+header a {
+  color: #fff !important;
+  font-size: 20px;
+}
+.nav {
+  padding: 25px;
+}
+.nav a {
+  padding-left: 10px;
+}
