@@ -19,7 +19,7 @@
             </div>
             <div class="from-group">
                 <label>Severity:</label>
-                <input type="number" id="Email"  required placeholder="Enter a Severity" name="Severity" value="<%= user.Severity %>">
+                <input type="number" id="Email"  required min="1" max="5" placeholder="Enter a Severity" name="Severity" value="<%= user.Severity %>">
             </div>
             <button class="btn btn-primary" placeholder="Submit">Submit</button>
         </form>
